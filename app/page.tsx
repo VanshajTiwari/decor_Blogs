@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { IoIosCall } from "react-icons/io";
 import { FaEnvelope } from "react-icons/fa";
 import { RiChatSmile3Line } from "react-icons/ri";
