@@ -1,4 +1,3 @@
-import HeroSectionHeading from "./_component/heroSection";
 import AnimationWrapper from "./_component/motionWrapper";
 
 export default function Home() {
@@ -6,7 +5,6 @@ export default function Home() {
         <>
       <header className="">
         <img src={"/img/hero.jpg"} alt=""  className="background"/>
-        <HeroSectionHeading/>
       </header>
       <main className="bg-zinc-100 text-emerald-900 pt-4">
       <section className="text-center py-4">
