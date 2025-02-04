@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FaFacebook } from "react-icons/fa";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaPinterest } from "react-icons/fa6";
 export default function MainNav() {
     return (
@@ -19,17 +18,17 @@ export default function MainNav() {
           </div>
           <div className="flex space-x-6">
             <nav className="flex space-x-4">
-              <a href="/" className="text-gray-700 hover:text-gray-900 font-medium">Home</a>
-              <a href="/weddings" className="text-gray-700 hover:text-gray-900 font-medium">Weddings</a>
-              <a href="/events" className="text-gray-700 hover:text-gray-900 font-medium">Events</a>
-              <a href="/services" className="text-gray-700 hover:text-gray-900 font-medium">Services</a>
-              <a href="/about-us" className="text-gray-700 hover:text-gray-900 font-medium">About</a>
+              <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">Home</Link>
+              <Link href="/weddings" className="text-gray-700 hover:text-gray-900 font-medium">Weddings</Link>
+              <Link href="/events" className="text-gray-700 hover:text-gray-900 font-medium">Events</Link>
+              <Link href="/services" className="text-gray-700 hover:text-gray-900 font-medium">Services</Link>
+              <Link href="/about-us" className="text-gray-700 hover:text-gray-900 font-medium">About</Link>
             </nav>
             <nav className="flex space-x-4">
-              <a href="/reviews" className="text-gray-700 hover:text-gray-900 font-medium">Love Notes</a>
-              <a href="/blog" className="text-gray-700 hover:text-gray-900 font-medium">Blog</a>
-              <a href="https://weddingplannerbusinesscoach.com" className="text-gray-700 hover:text-gray-900 font-medium">Boutique</a>
-              <a href="/contact" className="text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+              <Link href="/reviews" className="text-gray-700 hover:text-gray-900 font-medium">Love Notes</Link>
+              <Link href="/blog" className="text-gray-700 hover:text-gray-900 font-medium">Blog</Link>
+              <Link href="https://weddingplannerbusinesscoach.com" className="text-gray-700 hover:text-gray-900 font-medium">Boutique</Link>
+              <Link href="/contact" className="text-gray-700 hover:text-gray-900 font-medium">Contact</Link>
             </nav>
           </div>
           <div className="flex space-x-4">

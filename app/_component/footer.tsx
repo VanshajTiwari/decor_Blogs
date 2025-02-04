@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaPinterest } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
@@ -17,19 +18,19 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold">Quick Links</h3>
             <ul className="mt-2 space-y-2">
-              <li><a href="#" className="hover:text-gray-300">Home</a></li>
-              <li><a href="#" className="hover:text-gray-300">Services</a></li>
-              <li><a href="#" className="hover:text-gray-300">Blog</a></li>
-              <li><a href="#" className="hover:text-gray-300">Contact</a></li>
+              <li><Link href="#" className="hover:text-gray-300">Home</Link></li>
+              <li><Link href="#" className="hover:text-gray-300">Services</Link></li>
+              <li><Link href="#" className="hover:text-gray-300">Blog</Link></li>
+              <li><Link href="#" className="hover:text-gray-300">Contact</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-semibold">Follow Us</h3>
             <div className="flex justify-center md:justify-start space-x-4 mt-2">
-              <a href="#" className="duration-200 hover:scale-120 hover:text-blue-500"><FaFacebook/></a>
-              <a href="#" className="duration-200 hover:scale-120 hover:text-pink-500"><FaInstagram/></a>
-              <a href="#" className="duration-200 hover:scale-120 hover:text-red-500"><FaPinterest/></a>
-              <a href="#" className="duration-200 hover:scale-120 hover:text-blue-500"><FaLinkedin/></a>
+              <Link href="#" className="duration-200 hover:scale-120 hover:text-blue-500"><FaFacebook/></Link>
+              <Link href="#" className="duration-200 hover:scale-120 hover:text-pink-500"><FaInstagram/></Link>
+              <Link href="#" className="duration-200 hover:scale-120 hover:text-red-500"><FaPinterest/></Link>
+              <Link href="#" className="duration-200 hover:scale-120 hover:text-blue-500"><FaLinkedin/></Link>
             </div>
           </div>
         </div>
