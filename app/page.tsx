@@ -1,9 +1,12 @@
+import HeroSectionHeading from "./_component/heroSection";
+import AnimationWrapper from "./_component/motionWrapper";
 
 export default function Home() {
   return (
         <>
       <header className="">
         <img src={"/img/hero.jpg"} alt=""  className="background"/>
+        <HeroSectionHeading/>
       </header>
       <main className="bg-zinc-100 text-emerald-900 pt-4">
       <section className="text-center py-4">
@@ -53,7 +56,8 @@ export default function Home() {
       </div>
       <section className="flex justify-center">
         <article className="flex bg-amber-100 shadow my-[4%] lg:max-w-[90%] lg:min-h-[600px] lg:max-h-[600px]">
-          <div className="w-1/2 pl-10 flex flex-col h-full items-start gap-y-2 ">
+          <AnimationWrapper direction={0} classes="w-1/2 pl-10">
+          <div className="w-full flex flex-col h-full items-start gap-y-2 ">
               <h1 className="flex flex-col pt-10 pb-4">
                 <span className="text-7xl">Effortless</span>
                 <span className="text-7xl">Elegance</span>
@@ -61,13 +65,19 @@ export default function Home() {
               <p className="pb-8 pr-10">Lorem mus perferendis ratione fugit odit rem corrupti illo nam exercitationem, velit sapiente quam repellat libero. Error laborum porro in natus mollitia a consequuntur quo laboriosam soluta eius repellendus ipsa explicabo dignissimos voluptates sed magnam itaque enim, unde facere harum. Corrupti est quisquam rem sint pariatur harum, cumque blanditiis ut. Sit praesentium nostrum assumenda eaque excepturi. Tempora, tempore. Esse ipsa optio quis iusto aperiam dolor rerum nam quam praesentium sequi provident, natus eveniet consequuntur vitae inventore in sunt error suscipit voluptas consectetur et.</p>
               <button className="lg:min-w-[300px] text-white bg-pink-800 px-4 py-2 uppercase">Wedding Gallery</button>
           </div>
-          <div className="w-1/2 h-full"><img src="/img/wedding.jpg" className="w-full h-full object-cover" /></div>
+          </AnimationWrapper>
+          <AnimationWrapper direction={1} classes="w-1/2 pl-10">
+           <div className="w-full h-full"><img src="/img/wedding.jpg" className="w-full h-full object-cover" /></div>
+          </AnimationWrapper>
         </article>
       </section>
       <section className="flex justify-center mb-6">
         <article className="flex my-[4%] lg:max-w-[100%] relative lg:left-36 lg:min-h-[200px] lg:max-h-[600px]">
-          <div className="lg:w-3/4 h-full -z-1 shadow"><img src="/img/award.jpg" className="w-full h-full object-cover" /></div>
-          <div className="lg:w-2/4 bg-emerald-900 shadow text-white pl-10 pb-8 relative top-40 -left-60 z-1 flex flex-col h-full items-start gap-y-2 ">
+          <AnimationWrapper direction={0} classes="lg:w-3/4">
+            <div className="w-full h-full -z-1 shadow"><img src="/img/award.jpg" className="w-full h-full object-cover" /></div>
+          </AnimationWrapper>
+          <AnimationWrapper direction={1} classes="bg-emerald-900  text-white lg:w-2/4 pb-8 pl-10 relative top-40 -left-60 z-1 shadow">
+          <div className="w-full  h-full  flex flex-col items-start gap-y-2 ">
               <h1 className="flex flex-col pt-10 pb-4">
                 <span className="text-7xl">Award </span>
                 <span className="text-6xl">Winning team</span>
@@ -75,11 +85,14 @@ export default function Home() {
               <p className="pb-8 pr-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere delectus perferendis voluptate. Sunt laudantium facere consequatur consectetur ducimus perferendis ratione fugit odit rem corrupti illo nam exercitationem, velit sapiente quam repellat libero. Error laborum porro in natus mollitia a consequuntur quo laboriosam soluta eius repellendus ipsa explicabo dignissimos voluptates sed magnam itaque enim, unde facere harum. Corrupti est quisquam rem sint pariatur harum, cumque blanditiis ut. Sit praesentium nostrum assumenda eaque excepturi. Tempora, tempore. Esse ipsa optio quis iusto aperiam dolor rerum nam quam praesentium sequi provident, natus eveniet consequuntur vitae inventore in sunt error suscipit voluptas consectetur et.</p>
               <button className="lg:min-w-[300px] text-white bg-pink-800 px-4 py-2 uppercase">Award Gallery</button>
           </div>
+          </AnimationWrapper>
         </article>
       </section>
       <section className="flex justify-center mt-20">
+
         <article className="flex bg-amber-100 shadow my-[4%] lg:max-w-[90%]  lg:min-h-[600px]  lg:max-h-[600px]">
-          <div className="w-1/2 pl-10 flex flex-col h-full items-start gap-y-2 ">
+          <AnimationWrapper direction={0} classes="w-1/2 h-full pl-10">
+          <div className="w-full h-full flex flex-col items-start gap-y-2 ">
               <h1 className="flex flex-col pt-10 pb-4">
                 <span className="text-7xl">Personal</span>
                 <span className="text-7xl">touches</span>
@@ -87,12 +100,16 @@ export default function Home() {
               <p className="pb-8 pr-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere delectus perferendis voluptate. Sunt laudantium facere consequatur consectetur ducimus perferendis ratione fugit odit rem corrupti illo nam exercitationem, velit sapiente quam repellat libero. Error laborum porro in natus mollitia a consequuntur quo laboriosam soluta eius repellendus ipsa explicabo dignissimos voluptates sed magnam itaque enim, unde facere harum. Corrupti est quisquam rem sint pariatur harum, cumque blanditiis ut. Sit praesentium nostrum assumenda eaque excepturi. Tempora, tempore. Esse ipsa optio quis iusto aperiam dolor rerum nam quam praesentium sequi provident, natus eveniet consequuntur vitae inventore in sunt error suscipit voluptas consectetur et.</p>
               <button className="lg:min-w-[300px] text-white bg-pink-800 px-4 py-2 uppercase">Our Services</button>
           </div>
-          <div className="w-1/2 h-full"><img src="/img/drinks.jpg" className="w-full h-full object-cover" /></div>
+         </AnimationWrapper>
+         <AnimationWrapper direction={1} classes="w-1/2">
+          <div className="w-full h-full"><img src="/img/drinks.jpg" className="w-full h-full object-cover" /></div>
+         </AnimationWrapper>
         </article>
       </section>
       <section className="flex justify-center lg:mb-40">
         <article className="flex my-[4%] lg:max-w-[100%] relative lg:right-28 lg:min-h-[200px] lg:max-h-[600px]">
-          <div className="lg:w-2/4 shadow bg-emerald-900 text-white pl-10 pb-8 relative top-40 -right-60 z-1 flex flex-col h-full items-start gap-y-2 ">
+          <AnimationWrapper direction={0} classes="lg:w-2/4 text-white  bg-emerald-900 shadow pl-10 pb-8 relative top-40 -right-60 z-1">
+          <div className="h-full w-full flex flex-col items-start gap-y-2 ">
               <h1 className="flex flex-col pt-10 pb-4">
                 <span className="text-7xl">Flawless</span>
                 <span className="text-6xl">Execution</span>
@@ -100,7 +117,10 @@ export default function Home() {
               <p className="pb-8 pr-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere delectus perferendis voluptate. Sunt laudantium facere consequatur consectetur ducimus perferendis ratione fugit odit rem corrupti illo nam exercitationem, velit sapiente quam repellat libero. Error laborum porro in natus mollitia a consequuntur quo laboriosam soluta eius repellendus ipsa explicabo dignissimos voluptates sed magnam itaque enim, unde facere harum. Corrupti est quisquam rem sint pariatur harum, cumque blanditiis ut. Sit praesentium nostrum assumenda eaque excepturi. Tempora, tempore. Esse ipsa optio quis iusto aperiam dolor rerum nam quam praesentium sequi provident, natus eveniet consequuntur vitae inventore in sunt error suscipit voluptas consectetur et.</p>
               <button className="lg:min-w-[300px] text-white bg-pink-800 px-4 py-2 uppercase">What Clients are Saying</button>
           </div>
-          <div className="lg:w-3/4 shadow h-full -z-1"><img src="/img/gathering.jpg" className="w-full h-full object-cover" /></div>
+          </AnimationWrapper>
+          <AnimationWrapper direction={0} classes="lg:w-3/4 shadow h-full -z-1">
+            <div className="w-full h-full"><img src="/img/gathering.jpg" className="w-full h-full object-cover" /></div>
+          </AnimationWrapper>
         </article>
       </section>
       <section>
