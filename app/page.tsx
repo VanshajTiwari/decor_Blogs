@@ -8,7 +8,7 @@ export default function Home() {
       </header>
       <main className="bg-zinc-100 text-emerald-900 pt-4">
       <section className="text-center py-4">
-        <h1 className="text-6xl">We are Brilliant.</h1>
+        <h1 className="text-6xl" style={{fontFamily:"Arsenal"}}>We are Brilliant.</h1>
         <p className="px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi repellendus perspiciatis voluptatibus, adipisci ducimus non placeat laboriosam laudantium quibusdam beatae, voluptate consectetur in omnis. Enim deleniti explicabo ipsum iusto suscipit optio fuga repellendus repellat, aperiam deserunt, officiis aliquam exercitationem veniam dolorem iste eveniet alias magnam facilis itaque sint ab? Obcaecati harum, dignissimos incidunt maiores distinctio asperiores accusantium! Quasi asperiores perferendis repudiandae, fuga veritatis eveniet maiores nihil exercitationem delectus dicta itaque at vel tempore ipsam maxime non ex provident placeat tenetur ea quidem aliquid, vero sapiente! Quaerat ad distinctio quo rem! Provident illum assumenda dolores odit magni voluptate reprehenderit aliquam, molestias, aliquid rem iusto deserunt corrupti hic quos numquam maiores! Aperiam blanditiis laborum odit deserunt ratione non repellendus placeat dolorum accusamus, aliquid facere nobis autem nostrum culpa soluta et veritatis nam unde deleniti. Ipsum tempore ad explicabo delectus sit dolores quasi? Animi ullam libero nemo blanditiis accusamus dolorem soluta id eligendi veritatis, pariatur repellendus iste ex nihil officiis itaque sequi eaque quis commodi voluptatem voluptatum alias. Incidunt velit impedit facilis et enim hic nulla totam eum laudantium, deleniti, sequi doloremque illo molestias dolores, possimus expedita. Quis itaque aperiam distinctio, aut deserunt corrupti, voluptate impedit eos nobis debitis in est labore inventore! Error quae ut dolorem! Neque labore dolorum delectus unde praesentium, quos inventore suscipit deserunt quidem eligendi consequatur excepturi animi, dolore sit pariatur fugit veritatis optio repellendus porro? Repudiandae itaque quibusdam omnis, unde aliquid a quasi praesentium veritatis obcaecati dolore delectus ipsum aperiam totam consequatur beatae magnam et quae tenetur!</p>
       </section>
       <div className="collage">
@@ -112,7 +112,7 @@ export default function Home() {
                 <span className="text-7xl">Flawless</span>
                 <span className="text-6xl">Execution</span>
               </h1>
-              <p className="pb-8 pr-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere delectus perferendis voluptate. Sunt laudantium facere consequatur consectetur ducimus perferendis ratione fugit odit rem corrupti illo nam exercitationem, velit sapiente quam repellat libero. Error laborum porro in natus mollitia a consequuntur quo laboriosam soluta eius repellendus ipsa explicabo dignissimos voluptates sed magnam itaque enim, unde facere harum. Corrupti est quisquam rem sint pariatur harum, cumque blanditiis ut. Sit praesentium nostrum assumenda eaque excepturi. Tempora, tempore. Esse ipsa optio quis iusto aperiam dolor rerum nam quam praesentium sequi provident, natus eveniet consequuntur vitae inventore in sunt error suscipit voluptas consectetur et.</p>
+              <p className="pb-8 pr-10 line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere delectus perferendis voluptate. Sunt laudantium facere consequatur consectetur ducimus perferendis ratione fugit odit rem corrupti illo nam exercitationem, velit sapiente quam repellat libero. Error laborum porro in natus mollitia a consequuntur quo laboriosam soluta eius repellendus ipsa explicabo dignissimos voluptates sed magnam itaque enim, unde facere harum. Corrupti est quisquam rem sint pariatur harum, cumque blanditiis ut. Sit praesentium nostrum assumenda eaque excepturi. Tempora, tempore. Esse ipsa optio quis iusto aperiam dolor rerum nam quam praesentium sequi provident, natus eveniet consequuntur vitae inventore in sunt error suscipit voluptas consectetur et.</p>
               <button className="lg:min-w-[300px] text-white bg-pink-800 px-4 py-2 uppercase">What Clients are Saying</button>
           </div>
           </AnimationWrapper>
@@ -125,14 +125,13 @@ export default function Home() {
             <article className="text-center mx-auto p-8">
               <h1 className="text-5xl">Follow us to see behind the scenes</h1>
               <h2 className="text-2xl font-medium mb-4">@brijeventsvrindavan</h2>
-              <div className="flex mx-auto justify-center gap-x-4 lg:w-[80%] lg:max-h-[200px]">
-                <img src="https://picsum.photos/600/800?random=1" alt=""  className="w-1/6 shadow"/>
-                <img src="https://picsum.photos/600/800?random=1" alt=""  className="w-1/6 shadow"/>
-                <img src="https://picsum.photos/600/800?random=1" alt=""  className="w-1/6 shadow"/>
-                <img src="https://picsum.photos/600/800?random=1" alt=""  className="w-1/6 shadow"/>
-                <img src="https://picsum.photos/600/800?random=1" alt=""  className="w-1/6 shadow"/>
-                <img src="https://picsum.photos/600/800?random=1" alt=""  className="w-1/6 shadow"/>
-
+              <div className="flex flex-col md:flex-row mx-auto justify-center gap-y-4 md:gap-y-0 md:gap-x-4 w-full md:w-[80%] lg:max-h-[200px]">
+                <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>
+                <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>
+                <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>
+                <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>
+                <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>
+                <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>
               </div>
             </article>
       </section>

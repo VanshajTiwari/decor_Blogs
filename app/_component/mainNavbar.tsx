@@ -16,18 +16,16 @@ export default function MainNav() {
               />
             </Link>
           </div>
-          <div className="flex space-x-6">
-            <nav className="flex space-x-4 font-light">
+          <div className="flex space-x-6  font-sm">
+            <nav className="flex space-x-6">
               <Link href="/" className="text-gray-700 hover:text-orange-900">Home</Link>
-              <Link href="/weddings" className="text-gray-700 hover:text-orange-900">Weddings</Link>
               <Link href="/events" className="text-gray-700 hover:text-orange-900 ">Events</Link>
-              <Link href="/services" className="text-gray-700 hover:text-orange-900">Services</Link>
-              <Link href="/about-us" className="text-gray-700 hover:text-orange-900 ">About</Link>
+              <Link href="/gallery" className="text-gray-700 hover:text-orange-900">Gallery</Link>
+              <Link href="/about" className="text-gray-700 hover:text-orange-900 ">About</Link>
             </nav>
-            <nav className="flex space-x-4">
+            <nav className="flex space-x-6">
               <Link href="/reviews" className="text-gray-700 hover:text-orange-900 ">Love Notes</Link>
               <Link href="/blog" className="text-gray-700 hover:text-orange-900 ">Blog</Link>
-              <Link href="https://weddingplannerbusinesscoach.com" className="text-gray-700 hover:text-orange-900">Boutique</Link>
               <Link href="/contact" className="text-gray-700 hover:text-orange-900 ">Contact</Link>
             </nav>
           </div>
