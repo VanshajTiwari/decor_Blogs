@@ -57,8 +57,6 @@
 header {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 90%;
   transform-style: preserve-3d;
   z-index: -1;
@@ -162,4 +160,43 @@ p{
 }
 h1{
   font-family:"Arsenal"
+}
+.--dropitemsmenmainnavbar:hover ~ ul{
+  display: block;
+  height: 10.5em;
+}
+.--dropitemsmenmainnavbar ~ ul:hover{
+  display: block;
+  height: 10.5em;
+}
+.swalling{
+  transition: all 0.25s;
+
+}
+.swalling:hover{
+  transform: scale(1.1);
+}
+.--heroSectionLogo{
+  opacity: 1;
+  transition: all 0.5s;
+  animation: reveal 1s 0s alternate 1;
+}
+@keyframes reveal {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  };
+  50%{
+    scale: scale(0.5);
+    opacity: 0.5;
+  };
+  80%{
+    scale: scale(1.1);
+    opacity: 0.75;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  };
+  
 }

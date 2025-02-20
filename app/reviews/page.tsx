@@ -1,8 +1,11 @@
 export default function Page() {
     return (
         <>
-            <header className="">
+            <header className="items-end justify-start">
                 <img src={"/img/feedback.jpg"} alt="" className="background" />
+                <div style={{fontFamily:"Arsenal"}} className="text-9xl p-4 rounded-sm text-white ">
+                    <h1>CLIENT REVIEWS</h1>
+                </div>
             </header>
             <div className="bg-gray-300 py-10 flex flex-cols items-center" style={{fontFamily:"Arsenal"}}>
                 <section className="p-4 text-center bg-gray-100 shadow w-11/12 mx-auto">

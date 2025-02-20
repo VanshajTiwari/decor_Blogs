@@ -1,8 +1,11 @@
 export default function Contact(){
     return (
         <>
-            <header className="">
+            <header className="items-end">
                 <img src={"/img/contactus.jpg"} alt=""  className="background"/>
+                <div style={{fontFamily:"Arsenal"}} className="text-9xl p-4 rounded-sm text-white ">
+                    <h1>CONTACT US</h1>
+                </div>
             </header>
             
             <section className="bg-gray-200 text-green-900 md:p-10 grid grid-cols-2" style={{fontFamily:"'Quicksand'"}}>

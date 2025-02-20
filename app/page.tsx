@@ -3,8 +3,11 @@ import AnimationWrapper from "./_component/motionWrapper";
 export default function Home() {
   return (
         <>
-      <header className="">
+      <header className="items-center justify-center">
         <img src={"/img/hero.jpg"} alt=""  className="background"/>
+        <div className="">
+            <span className="text-8xl font-bold bg-orange-200 px-2 rounded-sm uppercase border --heroSectionLogo" style={{fontFamily:"Arsenal"}}>Vraj Gopal Events</span>
+        </div>
       </header>
       <main className="bg-zinc-100 text-emerald-900 pt-4">
       <section className="text-center py-4">
@@ -124,7 +127,7 @@ export default function Home() {
       <section>
             <article className="text-center mx-auto p-8">
               <h1 className="text-5xl">Follow us to see behind the scenes</h1>
-              <h2 className="text-2xl font-medium mb-4">@brijeventsvrindavan</h2>
+              <h2 className="text-2xl font-medium mb-4">@vrajgopalevents</h2>
               <div className="flex flex-col md:flex-row mx-auto justify-center gap-y-4 md:gap-y-0 md:gap-x-4 w-full md:w-[80%] lg:max-h-[200px]">
                 <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>
                 <img src="https://picsum.photos/600/800?random=1" alt=""  className="md:w-1/6 w-full shadow"/>

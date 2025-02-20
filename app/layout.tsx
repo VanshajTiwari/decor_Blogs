@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Decors",
+  title: "Vraj Gopal Events",
   description: "Best event management firm ",
 };
 

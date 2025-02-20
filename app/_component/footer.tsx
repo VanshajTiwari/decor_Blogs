@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex item-center justify-center rounded-full bg-white max-w-[100px] mb-4">
                 <img src="/logo.png" alt="logo" className="w-full" style={{transform:"scale(1.6)"}}/>
             </div>
-            <h3 className="text-xl font-semibold">About Us</h3>
+            <h3 className="text-xl font-semibold">Vraj Gopal Events</h3>
             <p className="mt-2 text-gray-400">
               We are committed to delivering the best digital experiences with top-notch quality and support.
             </p>
@@ -18,9 +18,9 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold">Quick Links</h3>
             <ul className="mt-2 space-y-2">
-              <li><Link href="#" className="hover:text-gray-300">Home</Link></li>
+              <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
               <li><Link href="#" className="hover:text-gray-300">Services</Link></li>
-              <li><Link href="#" className="hover:text-gray-300">Blog</Link></li>
+              <li><Link href="" className="hover:text-gray-300">Blog</Link></li>
               <li><Link href="#" className="hover:text-gray-300">Contact</Link></li>
             </ul>
           </div>
