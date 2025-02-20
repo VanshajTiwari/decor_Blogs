@@ -161,7 +161,9 @@ p{
 h1{
   font-family:"Arsenal"
 }
-.--dropitemsmenmainnavbar:hover ~ ul{
+.--dropitemsmenmainnavbar:hover ~ ul,
+.--dropitemsmenmainnavbar:focus ~ ul,
+.--dropitemsmenmainnavbar:active ~ ul{
   display: block;
   height: 10.5em;
 }

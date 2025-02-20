@@ -6,8 +6,8 @@ const Footer = () => {
     return (
       <footer className="bg-gray-900 text-white py-8 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div>
-            <div className="flex item-center justify-center rounded-full bg-white max-w-[100px] mb-4">
+          <div className="flex flex-col items-center md:block">
+            <div className="flex items-center w-fu justify-center rounded-full bg-white max-w-[100px] mb-4">
                 <img src="/logo.png" alt="logo" className="w-full" style={{transform:"scale(1.6)"}}/>
             </div>
             <h3 className="text-xl font-semibold">Vraj Gopal Events</h3>
@@ -19,9 +19,9 @@ const Footer = () => {
             <h3 className="text-xl font-semibold">Quick Links</h3>
             <ul className="mt-2 space-y-2">
               <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
-              <li><Link href="#" className="hover:text-gray-300">Services</Link></li>
-              <li><Link href="" className="hover:text-gray-300">Blog</Link></li>
-              <li><Link href="#" className="hover:text-gray-300">Contact</Link></li>
+              <li><Link href="/gallery" className="hover:text-gray-300">Gallery</Link></li>
+              <li><Link href="#" className="hover:text-gray-300">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-gray-300">Contact</Link></li>
             </ul>
           </div>
           <div>

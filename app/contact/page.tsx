@@ -3,12 +3,12 @@ export default function Contact(){
         <>
             <header className="items-end">
                 <img src={"/img/contactus.jpg"} alt=""  className="background"/>
-                <div style={{fontFamily:"Arsenal"}} className="text-9xl p-4 rounded-sm text-white ">
+                <div style={{fontFamily:"Arsenal"}} className="md:text-9xl text-6xl p-4 rounded-sm text-white ">
                     <h1>CONTACT US</h1>
                 </div>
             </header>
             
-            <section className="bg-gray-200 text-green-900 md:p-10 grid grid-cols-2" style={{fontFamily:"'Quicksand'"}}>
+            <section className="bg-gray-200 text-green-900 md:p-10 md:grid md:grid-cols-2" style={{fontFamily:"'Quicksand'"}}>
                 <div>
                     <h1 className="text-4xl">Contact us</h1>
                     <p>We woould love to hear you ! To get started planning you event, please fill out the below form or email us at muthalvrindavank@gmail.com .</p>
@@ -24,9 +24,9 @@ export default function Contact(){
                                 <input type="text" className="border border-black p-2"/>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2">
+                        <div className="grid grid-cols-1 md:grid-cols-2">
                             <label className="">Email Address <span className="ml-1 font-medium">(Required)*</span></label>
-                            <input type="text" className="relative -left-32 border border-black p-2 md:min-w-[475px]"/>
+                            <input type="text" className="relative md:-left-32 border border-black p-2 md:min-w-[475px]"/>
                         </div>
                         <div className="flex items-center gap-x-2">
                             <input type="checkbox" className="w-4 h-4"/>
@@ -64,7 +64,7 @@ export default function Contact(){
                         </div>
                     </form>
                 </div>
-                <div className="flex flex-col gap-y-[300px] ml-6">
+                <div className="flex flex-col gap-y-6 md:gap-y-[300px] ml-6 py-6">
                     <div className="flex flex-col">
                         <span className="flex gap-x-2">
                             <span className="uppercase font-bold">BADWAUR City</span>

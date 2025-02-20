@@ -5,7 +5,7 @@ export default function Page(){
         <>
             <header className="items-end justify-start">
                 <img src={"/img/gallery.jpg"} alt=""  className="background"/>
-                <div style={{fontFamily:"Arsenal"}} className="text-9xl p-4 rounded-sm text-white ">
+                <div style={{fontFamily:"Arsenal"}} className="md:text-9xl text-6xl p-4 rounded-sm text-white ">
                     <h1>GALLERY</h1>
                 </div>
             </header>
